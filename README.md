@@ -1,5 +1,8 @@
 # GraphDatabase-Neo4j
 
+![image](https://github.com/user-attachments/assets/c8667285-0425-4a6e-bafa-ccb62b1f86f1)
+
+
 ## Introduction
 
 This repository contains the code for the Neo4j graph database. The code is written in Python and uses the `neo4j` library to interact with the database. The code is written in a modular way, so that it can be easily extended to add more functionality.
