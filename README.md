@@ -14,6 +14,12 @@ Neo4j is a graph database that is designed to store and query large amounts of d
 
 - **LLM:**  LLM used to intract with the database is `Groq`, it provides all the latest llms APIs for free.
 
+## Features
+
+- **Create Database:** The code creates a Neo4j database and populates it with data from a CSV file.
+
+- **Query Database:** The code queries the database using the LLM API and displays the results on the webpage.
+
 ## Steps to run the code
 
 1. Clone the repository
@@ -62,6 +68,7 @@ This will create the database and populate it with the data from the `movies_sma
 ```
 
 This will run the code and query the database using the LLM API. The results will be displayed on the webpage.
+
 
 
 
