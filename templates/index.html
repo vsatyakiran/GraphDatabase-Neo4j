@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000410;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 50px;
+            color: #ffffff;
+            span{
+                color: #007bff;
+            }
+
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        label {
+            margin-right: 10px;
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        input {
+            padding: 5px;
+            margin-right: 10px;
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 50px;
+            outline: none;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            height: 50px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            background-color: #e0e5ea;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            span{
+                font-weight: bold;
+                color: #007bff;
+            }
+        }
+
+        .result h2 {
+            margin-bottom: 10px;
+            color: #007bff;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .result p {
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            line-height: 15px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><span>Graph Database </span>Neo4J</h1>
+        <form method="post" action="/query">
+            <label for="query">Query</label>
+            <input type="text" name="query" id="query" placeholder="Enter your query">
+            <button type="submit">Submit</button>
+        </form>
+        {% if response %}
+            <div class="result">
+                <h2>Result</h2>
+                <p><span>Query: </span> {{ query_data }}</p>
+                <p><span>Result: </span> {{ response }}</p>
+            </div>
+        {% endif %}
+
+    </div>
+    
+
+</body>
+</html>
